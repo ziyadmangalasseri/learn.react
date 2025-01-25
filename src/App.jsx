@@ -6,15 +6,27 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [inputValue, setInputValue] = useState("");
 
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`Submited value: ${inputValue}`);
+  };
 
-  // {     React Element 
-  const a =  React.createElement("div",{id:"root2"},"Hello")
+  // {     React Element
+  const a = React.createElement("div", { id: "root2" }, "Hello");
   // const a = <div id="root2">Hello</div>
   // }
 
   // { With child React Element
-  const b = React.createElement("div",{id:"root3"},React.createElement("h2",{},"My Titile"))
+  const b = React.createElement(
+    "div",
+    { id: "root3" },
+    React.createElement("h2", {}, "My Titile")
+  );
   // const b = <div id="root3"><h2>My Titile</h2></div>
   // }
 
@@ -22,6 +34,20 @@ function App() {
     <div>
       <h1>{a}</h1>
       {b}
+
+      <h2>Controlled Component Example</h2>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Enter Your Name</label>
+        <input
+          type="text"
+          id="name"
+          value={inputValue} // Controlled by State
+          onChange={handleChange} // Updates state on Change
+
+        />
+        <button type="submit">Submit</button>
+        <p>Current Value : {inputValue}</p>
+      </form>
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
