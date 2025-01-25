@@ -1,7 +1,7 @@
 ## 1.Understand what React.js is and its purpose as a JavaScript library
 React.js is an open-source JavaScript library created by Facebook, primarily used for building user interfaces (UIs). It focuses on developing single-page applications (SPAs) where efficient rendering and dynamic updates to the view are crucial. Its main purpose is to simplify the process of creating interactive UIs with reusable components.
 
-# 2.Explain why React.js is in demand in the industry
+### 2.Explain why React.js is in demand in the industry
 React.js is highly sought after because:
 
 Popularity: Widely adopted by leading companies (e.g., Facebook, Netflix, Airbnb).
