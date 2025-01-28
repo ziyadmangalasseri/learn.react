@@ -94,7 +94,7 @@ Prevents Unnecessary Re-Renders: If the props of a component wrapped with React.
 Shallow Comparison: By default, React.memo uses a shallow comparison of the props to determine whether the component needs to be updated.
 Improves Performance: Ideal for components that are expensive to render and don't frequently receive updated props.
 
-## Syntax
+### Syntax
 ``` JavaScript 
 const MemoizedComponent = React.memo(MyComponent); 
 ```
