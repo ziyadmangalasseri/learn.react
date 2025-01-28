@@ -99,7 +99,7 @@ Improves Performance: Ideal for components that are expensive to render and don'
 const MemoizedComponent = React.memo(MyComponent); 
 ```
 
-## Exapmle 
+#### Exapmle 
 ``` JavaScript 
 import React from "react";
 
