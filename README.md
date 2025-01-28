@@ -94,7 +94,7 @@ Prevents Unnecessary Re-Renders: If the props of a component wrapped with React.
 Shallow Comparison: By default, React.memo uses a shallow comparison of the props to determine whether the component needs to be updated.
 Improves Performance: Ideal for components that are expensive to render and don't frequently receive updated props.
 
-### Syntax
+#### Syntax
 ``` JavaScript 
 const MemoizedComponent = React.memo(MyComponent); 
 ```
@@ -133,18 +133,18 @@ export default App;
 ## What is useMemo?
 useMemo is a React Hook that memoizes (caches) the result of a computation and only recomputes it when its dependencies change. It helps optimize performance by preventing expensive calculations from being performed on every render.
 
-## Key Features
+### Key Features
 Memoizes Expensive Calculations: Prevents recalculating the same result if the input dependencies haven't changed.
 Improves Performance: Useful for components with costly computations or for avoiding unnecessary re-renders.
 Dependency Array: Recomputes the value only if one of the values in the dependency array changes.
 
-## Syntax 
+#### Syntax 
 ``` JavaScript
 const memoizedValue = useMemo(() => computeValue(a, b), [a, b]);
 ```
-## Example 
+#### Example 
 
-without useMemo 
+##### without useMemo 
 ``` JavaScript
 import React, { useState } from "react";
 
@@ -179,7 +179,7 @@ In this example, expensiveCalculation is executed on every render, even when cou
 
 
 
-With useMemo 
+##### With useMemo 
 
 ``` JavaScript
 import React, { useState, useMemo } from "react";
